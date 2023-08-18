@@ -3,6 +3,11 @@
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     border: border-box;
+    text-align: center;
+}
+
+body{
+    background-color: whitesmoke;
 }
 
 .container{
@@ -15,12 +20,14 @@
 .left{
     height: 500px;
     width: 200px;
-    border: 1px solid black;
-    display: flex;
+    background-color: white;
+    /* border: 1px solid black; */
+    display: block;
     justify-content: right;
-    align-items: right;
+    align-items: right; 
     flex-direction: column;
-    float: right;
+    box-shadow: 10px;
+    
 }
 
 .createspace{
@@ -52,14 +59,19 @@ i:hover{
 .sports{
     height: 40px;
     width: 110px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    background-color: whitesmoke;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
 .middle{
     height: 900px;
     width: 600px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    background-color: white;
+    box-shadow: 10px;
     
     
 }
@@ -67,6 +79,8 @@ i:hover{
 .right{
     height: 450px;
     width: 270px;
-    border: 1px solid black;
-    position: static;
+    /* border: 1px solid black; */
+    background-color: white;
+    box-shadow: 10px;
+    
 }
