@@ -59,6 +59,7 @@ ul li:hover{
     align-items: center;
     height: 40px;
     width: 110px;
+    margin-left: 30px;
     /* border: 1px solid black; */
 }
 
@@ -149,6 +150,7 @@ select{
     background-color: #B92B27;
     color: white;
     cursor: pointer;
+    margin-left: -20px;
 }
 
 /*------body--------*/
