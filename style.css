@@ -39,6 +39,9 @@
     height: 40px;
 }
 
+select{
+    border: none;
+}
 
 
 
@@ -61,14 +64,14 @@ body{
 
 .left{
     height: 500px;
-    width: 200px;
+    width: 110px;
     background-color: white;
     /* border: 1px solid black; */
     display: block;
     justify-content: right;
     align-items: right; 
     flex-direction: column;
-    box-shadow: 10px;
+    /* box-shadow: 10px; */
     position: sticky;
     top: 70px;
     margin-left: 5px;
@@ -77,9 +80,10 @@ body{
 }
 
 .createspace{
+    color: slategray;
     height: 80px;
     width: 110px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 
     display: flex;
     /* background-color: whitesmoke; */
@@ -111,26 +115,31 @@ i:hover{
     margin-bottom: 5px;
 }
 
+.foot{
+    font-size: small;
+    display: inline;
+    color: slategray;
+}
+
 
 .middle{
     height: 1100px;
-    width: 600px;
+    width: 750px;
     /* border: 10px solid black; */
     background-color: white;
-    box-shadow: 10px;
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 50px;
     z-index: 0;
+    border-radius: 5px;
 }
 
 
 .right{
     height: 450px;
-    width: 270px;
+    width: 350px;
     /* border: 1px solid black; */
     background-color: white;
-    box-shadow: 10px;
     position: sticky;
     top: 70px;
     margin-left: 5px;
