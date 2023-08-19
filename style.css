@@ -1,13 +1,13 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    border: border-box;
-    text-align: center;
+    box-sizing: border-box;
 }
 
 /*-------navbar-------*/
 .navbar{
+    margin: 1px;
     height: 50px;
     width: 100%;
     background-color: white;
@@ -18,10 +18,45 @@
     top: 0;
     z-index: 1;
 }
+.navv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+ul.nav{
+    display: flex;  
+    align-items: center; 
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+}
+
+ul li {
+    height: 100%;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+ul li:hover{
+    background-color: rgba(128, 128, 128, 0.32);
+    color: #B92B27;
+}
 
 .logo{
     background-image: url("logo_quora3.png");
     background-size: cover;
+    display: flex;
+    align-items: center;
     height: 40px;
     width: 110px;
     /* border: 1px solid black; */
@@ -29,22 +64,92 @@
 
 .size{
     font-size: 1.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    border: 1px solid rgba(128, 128, 128, 0.395);
+    border-radius: 2px;
+    height: 70%;
+    padding: 0 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.search-container i{
+    color: rgba(128, 128, 128, 0.395);
+}
+
+.try{
+    padding: 10px;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.957);
+    border-radius: 20px;
+    color: rgba(128, 128, 128, 0.986);
+    font-size: 14px;
+}
+
+.button{
+    border: none;
+    outline:none !important ;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgba(128, 128, 128, 0.999);
+
+}
+
+.try:hover{
+    background-color: rgb(128, 128, 128, 0.200);
 }
 
 .search{
     display: flex;
     justify-content: space-evenly;
     /* background-color: pink; */
-    width: 200px;
-    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    width: 17rem;
+    height: 100%;
 }
+
+.search-container:hover{
+    border: 1px solid blue;
+}
+
+/* .profile{
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: -100px -200px;
+
+
+} */
 
 select{
     border: none;
+    background-color: transparent;
+    color: white;
 }
 
-
-
+.addques{
+    padding: 10px 15px;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background-color: #B92B27;
+    color: white;
+    cursor: pointer;
+}
 
 /*------body--------*/
 
@@ -59,12 +164,13 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    padding: 0 10%;
     
 }
 
 .left{
-    height: 500px;
-    width: 110px;
+    height: 450px;
+    width: 20%;
     background-color: white;
     /* border: 1px solid black; */
     display: block;
@@ -74,20 +180,23 @@ body{
     /* box-shadow: 10px; */
     position: sticky;
     top: 70px;
-    margin-left: 5px;
-    margin-right: 5px;
+    padding: 0 5px;
+    /* margin-left: 5px;
+    margin-right: 5px; */
     
 }
 
 .createspace{
     color: slategray;
     height: 80px;
-    width: 110px;
+    width: 100%;
     /* margin-top: 10px; */
-
+    /* padding: 0 10px; */
     display: flex;
+    font-size: 15px;
     /* background-color: whitesmoke; */
     /* justify-content: center; */
+    gap: 10px;
     align-items: center;
     flex-direction: row;
 }
@@ -96,19 +205,16 @@ body{
     background-color: whitesmoke;
 }
 
-i{
-    margin-bottom: 18px;
-    margin-right: 3px;
-    background-color: whitesmoke;
+.leftbar{
+    display: flex;
+    align-items: right;
+    
 }
 
-i:hover{
-    background-color: rgb(215, 211, 211);
-}
 
 .sports{
     height: 40px;
-    width: 110px;
+    width: auto;
     /* border: 1px solid black; */
     background-color: whitesmoke;
     margin-top: 5px;
@@ -124,7 +230,7 @@ i:hover{
 
 .middle{
     height: 1100px;
-    width: 750px;
+    width: 55%;
     /* border: 10px solid black; */
     background-color: white;
     margin-left: 5px;
@@ -137,7 +243,7 @@ i:hover{
 
 .right{
     height: 450px;
-    width: 350px;
+    width: 30%;
     /* border: 1px solid black; */
     background-color: white;
     position: sticky;
