@@ -10,7 +10,7 @@
 
 .navbar{
     margin: 1px;
-    height: 50px;
+    height: 55px;
     width: 100%;
     background-color: white;
     display: flex;
@@ -20,6 +20,20 @@
     top: 0;
     z-index: 1;
 }
+
+.logo{
+    background-image: url("logo_quora.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: 100px;
+    margin-left: 20px;
+    margin-right: -20px;
+    padding-bottom: 5px;
+    /* border: 1px solid black; */
+}
+
 .navv{
     display: flex;
     align-items: center;
@@ -27,19 +41,19 @@
     height: 100%;
 }
 
-ul{
+div{
     list-style: none;
 }
 
-ul.nav{
+div.nav{
     display: flex;  
     align-items: center; 
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 10px;
     height: 100%;
 }
 
-ul li {
+div li{
     height: 100%;
     color: grey;
     display: flex;
@@ -49,22 +63,9 @@ ul li {
     cursor: pointer;
 }
 
-ul li:hover{
+div li:hover{
     background-color: rgba(128, 128, 128, 0.32);
     color: #B92B27;
-}
-
-.logo{
-    background-image: url("logo_quora.png");
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    height: 35px;
-    width: 100px;
-    margin-left: 30px;
-    margin-right: -50px;
-    padding-bottom: 5px;
-    /* border: 1px solid black; */
 }
 
 .home{
@@ -72,12 +73,6 @@ ul li:hover{
     color: #B92B27;
 }
 
-.size{
-    font-size: 1.5rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
 
 .search-container{
     display: flex;
@@ -86,7 +81,7 @@ ul li:hover{
     gap: 2px;
     border: 1px solid rgba(128, 128, 128, 0.395);
     border-radius: 2px;
-    height: 70%;
+    height: 80%;
     padding: 0 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -135,14 +130,6 @@ ul li:hover{
     border: 1px solid blue;
 }
 
-/* .profile{
-    border: 1px solid grey;
-    border-radius: 50%;
-    padding: -100px -200px;
-
-
-} */
-
 select{
     border: none;
     background-color: transparent;
@@ -184,7 +171,7 @@ body{
 
 .left{
     height: 450px;
-    width: 12%;
+    width: 13%;
     background-color: whitesmoke;
     /* border: 1px solid black; */
     display: block;
@@ -209,7 +196,7 @@ body{
     font-size: 15px;
     /* background-color: whitesmoke; */
     /* justify-content: center; */
-    gap: 10px;
+    gap: 3px;
     align-items: center;
     flex-direction: row;
 }
@@ -223,10 +210,12 @@ body{
     align-items: center;
     justify-content: left;
     color: rgba(128, 128, 128, 0.999);
+    padding-left: 5px;
 }
 
 .leftbar:hover{
     background-color: rgba(128, 128, 128, 0.199);;
+    border-radius: 3px;
 }
 
 .side{
@@ -241,9 +230,21 @@ body{
 
 .foot{
     font-size: small;
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
     color: slategray;
 }
+
+.help{
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.help:hover{
+    text-decoration: underline !important ;
+    cursor: pointer;
+}
+
 
 ol{
     list-style: none;
