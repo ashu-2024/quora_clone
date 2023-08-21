@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     box-sizing: border-box;
 }
 
@@ -51,40 +51,6 @@ li{
     color: #B92B27;
 }
 
-@media only screen and (max-width: 768px) {
-    .navbar{
-        display: none;
-    }
-    .left{
-        display: none;
-    }
-    .right{
-        display: none;
-    }
-    .middle{
-            width: 120%;
-            /* border: 10px solid black; */
-            margin-top: -15.5px;
-            margin-left: -60px;
-            margin-right: -60px;
-    }
-    .mobile{
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
-    }
-    .navbar1{
-        display: flex;
-        width: 100vw;
-    }
-    .navbar2{
-        display: flex;
-    }
-    .container{
-        margin-top: 7.4rem;
-    }
-}
 
 /*------new navbar-----*/
 
@@ -104,6 +70,7 @@ li{
 .logo{
     color: #b92b27;
     cursor: pointer;
+    font-family: HelveticaNeue;
 }
 
 .home i{
@@ -378,4 +345,70 @@ ol{
     top: 60px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+
+/*------ media-queries--------*/
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .navbar{
+        display: none;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    .middle{
+            width: 100vw;
+            margin-top: 100px;
+            margin-left: -60px;
+            margin-right: -60px;
+    }
+    .mobile{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+    .navbar1{
+        display: flex;
+        width: 100vw;
+    }
+    .navbar2{
+        display: flex;
+    }
+}
+
+@media (min-width:0px) and (max-width:768px) {
+    .leftbar{
+        display: none;
+    }
+    .foot{
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+    .leftbar{
+        font-size: 15px;
+    }
+    .leftbar1{
+        font-size: 17px;
+    }
+    
+}
+
+@media (min-width:768px) and (max-width:980px) {
+    .left{
+        margin-left:-10px;
+    }
+    .leftbar{
+        font-size: 12px;
+    }
+    .leftbar1{
+        font-size: 15px;
+    }
+    
 }
