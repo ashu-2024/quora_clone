@@ -5,148 +5,174 @@
     box-sizing: border-box;
 }
 
-/*-------navbar-------*/
+/*-------mobile navbar-------*/
+
+.navbar1{
+    height:50px;
+    width:100%;
+    background-color:#B92B27;
+    display: none;
+    align-items: center;
+    justify-content:space-evenly ;
+    z-index: 1;
+}
 
 
-.navbar{
-    margin: 1px;
-    height: 55px;
+.navbar2{
+    height: 50px;
     width: 100%;
     background-color: white;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    z-index: 1;
+
+}
+
+li{
+    
+    color: rgba(128, 128, 128, 0.900);
+
+}
+
+.search1{
+    color: white;
+    padding-left:3px ;
+    padding-right: 2px;
+    cursor: pointer;
+}
+
+.addques1{
+    display: flex;
+}
+
+.home1{
+    color: #B92B27;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar{
+        display: none;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    .middle{
+            width: 120%;
+            /* border: 10px solid black; */
+            margin-top: -15.5px;
+            margin-left: -60px;
+            margin-right: -60px;
+    }
+    .mobile{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    .navbar1{
+        display: flex;
+        width: 100vw;
+    }
+    .navbar2{
+        display: flex;
+    }
+    .container{
+        margin-top: 7.4rem;
+    }
+}
+
+/*------new navbar-----*/
+
+.navbar{
+    height: 50px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 3;
+    background-color: white;
+    box-shadow: 1px black;
 }
 
 .logo{
-    background-image: url("logo_quora.png");
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    height: 35px;
-    width: 100px;
-    margin-left: 20px;
-    margin-right: -20px;
-    padding-bottom: 5px;
-    /* border: 1px solid black; */
-}
-
-.navv{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-div{
-    list-style: none;
-}
-
-div.nav{
-    display: flex;  
-    align-items: center; 
-    justify-content: space-between;
-    gap: 10px;
-    height: 100%;
-}
-
-div li{
-    height: 100%;
-    color: grey;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 10px;
+    color: #b92b27;
     cursor: pointer;
 }
 
-div li:hover{
-    background-color: rgba(128, 128, 128, 0.32);
-    color: #B92B27;
+.home i{
+    color: #b92b27;
 }
 
-.home{
-    text-decoration: none;
-    color: #B92B27;
+.com{
+    color: rgba(128, 128, 128, 0.999);
+    /* border: 1px solid black; */
+    padding: 5px;
+    cursor: pointer;
 }
 
+.com:hover{
+    background-color: rgba(128, 128, 128, 0.400);
+}
 
-.search-container{
+.search-contain{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 2px;
-    border: 1px solid rgba(128, 128, 128, 0.395);
+    /* gap: 2px; */
+    border: 1px solid rgba(128, 128, 128, 0.400);
     border-radius: 2px;
-    height: 80%;
-    padding: 0 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 65%;
+    padding: 0 5px;
 }
 
-.search-container i{
-    color: rgba(128, 128, 128, 0.395);
+.search-contain i{
+    color: rgba(128, 128, 128, 0.400);
+}
+
+.search-input{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex-flow: row;
+    height: 100%;
+}
+
+.search-contain:hover{
+    border: 1px solid blue;
 }
 
 .try{
-    padding: 10px;
-    height: 65%;
-    display: flex;
-    align-items: center;
-    border: 1px solid rgba(128, 128, 128, 0.957);
-    border-radius: 20px;
-    color: rgba(128, 128, 128, 0.986);
-    font-size: 14px;
-}
-
-.button{
-    border: none;
-    outline:none !important ;
-    background-color: transparent;
-    cursor: pointer;
     color: rgba(128, 128, 128, 0.999);
-
+    border: 1px solid rgba(128, 128, 128, 0.999);
+    border-radius: 50px;
+    padding: 5px 10px; 
+    cursor: pointer;
 }
 
 .try:hover{
-    background-color: rgb(128, 128, 128, 0.200);
+    background-color: rbga(128, 128, 128, 0.100);
 }
 
-.search{
-    display: flex;
-    justify-content: space-evenly;
-    /* background-color: pink; */
-    border: none;
-    outline: none;
-    padding: 0 10px;
-    width: 17rem;
-    height: 100%;
-}
-
-.search-container:hover{
-    border: 1px solid blue;
+.addquestions{
+    border: 1px solid #b92b27;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #b92b27;
+    color: white;
+    cursor: pointer;
 }
 
 select{
     border: none;
-    background-color: transparent;
+    background-color: #b92b27;
     color: white;
-}
-
-.addques{
-    padding: 10px 15px;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 50px;
-    background-color: #B92B27;
-    color: white;
-    cursor: pointer;
-    margin-left: -40px;
 }
 
 /*------body--------*/
@@ -162,7 +188,7 @@ body{
     height: auto; */
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 0 10%;
     
 }
@@ -173,14 +199,12 @@ body{
     height: 450px;
     width: 13%;
     background-color: whitesmoke;
-    /* border: 1px solid black; */
     display: block;
     justify-content: right;
     align-items: right; 
     flex-direction: column;
-    /* box-shadow: 10px; */
     position: sticky;
-    top: 70px;
+    top: 60px;
     padding: 0 5px;
     /* margin-left: 5px;
     margin-right: 5px; */
@@ -266,10 +290,10 @@ ol{
     width: 55%;
     /* border: 10px solid black; */
     background-color: whitesmoke;
+    margin-top: 50px;
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 50px;
-    z-index: 0;
+    z-index: 1;
     border-radius: 5px;
 }
 
@@ -351,7 +375,7 @@ ol{
     /* border: 1px solid black; */
     background-color: white;
     position: sticky;
-    top: 70px;
+    top: 60px;
     margin-left: 5px;
     margin-right: 5px;
 }
